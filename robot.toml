@@ -1,0 +1,28 @@
+[profiles.default]
+description     = "Local Chrome, non-headless, full console output"
+enabled         = true
+console         = "verbose"
+console-colors  = "auto"
+args            = [
+  "--variablefile", "resources/common/variables.resource"
+]
+
+[profiles.headless]
+description     = "Chrome headless, dotted output"
+enabled         = false
+inherits        = ["default"]
+console         = "dotted"
+args            = [
+  "--variablefile", "resources/common/variables.resource",
+  "--variable", "HEADLESS:true"
+]
+
+[tool.robotcode]
+default_formatter = "robotcode.robotcode-vscode-extension"
+
+[tool.robotcode-analyze.cache]
+extend-ignored-libraries = []
+extend-ignored-variables = []
+
+[tool.robotcode-analyze]
+exclude-patterns = ["**/.venv/**"]

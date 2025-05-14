@@ -1,0 +1,21 @@
+{
+    // Use the venv in the project root:
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  
+    // Automatically activate that environment in new terminals:
+    "python.terminal.activateEnvironment": true,
+    "cSpell.words": [
+      "Firstname",
+      "Lastname",
+      "outputdir",
+      "PREFS",
+      "robotcode",
+      "robotframework",
+      "STATUSRC",
+      "variablefile",
+      "venv"
+    ],
+    "robotcode.profiles": [
+      "headless"
+    ],
+  }
